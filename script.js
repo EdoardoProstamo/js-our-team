@@ -54,6 +54,7 @@ function renderHTML(parent, elements) {
   //per ogni elemento creo html di riferimento
   //dopo aver creato l'html lo 'appendo' al parent element
 
+  let items = '';
   for (let i=0; i < elements.lenght; i++) {
     const currentElement = elements[i];
 
