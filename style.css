@@ -33,15 +33,20 @@ main {
     margin-top: 60px;
 }
 
-.Row {
+.row {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
     
 }
-.Box {
+.box {
     background-color: blue;
     width: calc(95% / 3);
     height: 100px;
     flex-shrink: 0;
+    display: flex;
+}
+
+.img {
+    height: 100%;
 }
