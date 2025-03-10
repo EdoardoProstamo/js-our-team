@@ -72,7 +72,11 @@ function renderHTML(parent, elements) {
   for (let i=0; i < elements.lenght; i++) {
     const currentElement = elements[i];
     console.log(currentElement);
+
+    items += createHTMLElement(currentElement);
   }
+
+
 
 
 
