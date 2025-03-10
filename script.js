@@ -64,6 +64,19 @@ renderHTML(parentElement, teamMembers);
 
 //funzione
 function renderHTML(parent, elements) {
-  console.log(teamMembers);
+  console.log(elements);
+
+  //per ogni elemento creo html di riferimento
+  //dopo aver creato l'html lo 'appendo' al parent element
+
+  for (let i=0; i < elements.lenght; i++) {
+    const currentElement = elements[i];
+    console.log(currentElement);
+  }
+
+
+
+
+
   console.log(parent);
 }
