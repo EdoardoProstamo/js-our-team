@@ -60,4 +60,10 @@ const teamMembers = [
 const parentElement = document.querySelector('box');
 
 //aggancia il risultato ad un elemento parent
-renderHTML(parentElement);
+renderHTML(parentElement, teamMembers);
+
+//funzione
+function renderHTML(parent, elements) {
+  console.log(teamMembers);
+  console.log(parent);
+}
