@@ -38,21 +38,6 @@ const teamMembers = [
 ];
 
 
-//struttura html
-
-// {/* <div class="box">
-//   <div class="immagine">
-//     <img class="img" src="img/male1.png" alt="Marco Bianchi">
-//   </div>
-//   <div class="testo">
-//     <h3>Marco Bianchi</h3>
-//     <article>Designer</article>
-//     <a class="email" href="#">marcobianchi@team.com</a>
-//     </div>
-// </div> */}
-
-
-
 
 //render html
 //create html element
@@ -76,11 +61,19 @@ function renderHTML(parent, elements) {
     items += createHTMLElement(currentElement);
   }
 
+  //inserimento del prodotto del ciclo nell'innerHTML del parent
+  parent.innerHTML = items;
+}
 
-
-
-
-
-
-  console.log(parent);
+function createHTMLElement(object) {
+  return `<div class="box">
+  <div class="immagine">
+    <img class="img" src="img/male1.png" alt="Marco Bianchi">
+  </div>
+  <div class="testo">
+    <h3>Marco Bianchi</h3>
+    <article>Designer</article>
+    <a class="email" href="#">marcobianchi@team.com</a>
+    </div>
+</div>`
 }
