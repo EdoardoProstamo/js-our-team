@@ -56,7 +56,6 @@ function renderHTML(parent, elements) {
 
   for (let i=0; i < elements.lenght; i++) {
     const currentElement = elements[i];
-    console.log(currentElement);
 
     items += createHTMLElement(currentElement);
   }
@@ -66,14 +65,17 @@ function renderHTML(parent, elements) {
 }
 
 function createHTMLElement(object) {
+
+console.log(object);
+
   return `<div class="box">
-  <div class="immagine">
-    <img class="img" src="img/male1.png" alt="Marco Bianchi">
-  </div>
-  <div class="testo">
-    <h3>Marco Bianchi</h3>
-    <article>Designer</article>
-    <a class="email" href="#">marcobianchi@team.com</a>
-    </div>
-</div>`
+            <div class="immagine">
+              <img class="img" src="img/${object.img}" alt="${object.name}">
+            </div>
+            <div class="testo">
+              <h3>${object.name}</h3>
+              <article>${object.role}</article>
+              <a class="email" href="#">${object.email}</a>
+            </div>
+          </div>`;
 }
