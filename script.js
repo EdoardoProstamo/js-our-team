@@ -50,3 +50,14 @@ const teamMembers = [
 //     <a class="email" href="#">marcobianchi@team.com</a>
 //     </div>
 // </div> */}
+
+
+
+
+//render html
+//create html element
+
+const parentElement = document.querySelector('box');
+
+//aggancia il risultato ad un elemento parent
+renderHTML(parentElement);
