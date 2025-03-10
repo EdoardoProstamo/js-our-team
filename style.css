@@ -1,7 +1,30 @@
-/*GENERAL*/
+/*Reset*/
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: "Fredoka", sans-serif;
+}
+
+
+/*General*/
+body {
+    padding: 70px 50px 0px ;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 70px;
+}
+
+h1 {
+    color: #e53170;
+    font-size: 50px;
+}
+
+p {
+    font-size: larger;
 }
