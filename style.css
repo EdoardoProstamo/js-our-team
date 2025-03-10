@@ -28,3 +28,20 @@ h1 {
 p {
     font-size: larger;
 }
+
+main {
+    margin-top: 60px;
+}
+
+.Row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    
+}
+.Box {
+    background-color: blue;
+    width: calc(95% / 3);
+    height: 100px;
+    flex-shrink: 0;
+}
