@@ -50,3 +50,12 @@ main {
 .img {
     height: 100%;
 }
+
+.testo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    margin-left: 20px;
+    color: #ffffff;
+}
