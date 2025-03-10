@@ -36,3 +36,17 @@ const teamMembers = [
     img: "img/female3.png"
   }
 ];
+
+
+//struttura html
+
+// {/* <div class="box">
+//   <div class="immagine">
+//     <img class="img" src="img/male1.png" alt="Marco Bianchi">
+//   </div>
+//   <div class="testo">
+//     <h3>Marco Bianchi</h3>
+//     <article>Designer</article>
+//     <a class="email" href="#">marcobianchi@team.com</a>
+//     </div>
+// </div> */}
