@@ -42,21 +42,22 @@ const teamMembers = [
 //render html
 //create html element
 
-const parentElement = document.querySelector('box');
+const parentElement = document.querySelector('.row');
 
 //aggancia il risultato ad un elemento parent
 renderHTML(parentElement, teamMembers);
 
 //funzione
 function renderHTML(parent, elements) {
-  console.log(elements);
 
   //per ogni elemento creo html di riferimento
   //dopo aver creato l'html lo 'appendo' al parent element
 
   let items = '';
-  for (let i=0; i < elements.lenght; i++) {
+  for (let i=0; i < elements.length; i++) {
     const currentElement = elements[i];
+
+    console.log(currentElement);
 
     items += createHTMLElement(currentElement);
   }
@@ -65,13 +66,12 @@ function renderHTML(parent, elements) {
   parent.innerHTML = items;
 }
 
-function createHTMLElement(object) {
 
-console.log(object);
+function createHTMLElement(object) {
 
   return `<div class="box">
             <div class="immagine">
-              <img class="img" src="img/${object.img}" alt="${object.name}">
+              <img class="img" src="${object.img}" alt="${object.name}">
             </div>
             <div class="testo">
               <h3>${object.name}</h3>
@@ -79,4 +79,6 @@ console.log(object);
               <a class="email" href="#">${object.email}</a>
             </div>
           </div>`;
+
+  console.log(object);
 }
